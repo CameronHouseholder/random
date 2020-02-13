@@ -25,7 +25,7 @@ public class Request {
 
     // get requests
     public Response retrieve(String path) {
-        return given().contentType("application/json+").filter(new AllureRestAssured())
+        return given().contentType("application/json").filter(new AllureRestAssured())
             .when().get(path);
     }
 

@@ -8,6 +8,10 @@ import org.aeonbits.owner.Config.Sources;
 })
 public interface EnvironmentConfig extends Config {
 
+    /**
+     * reads and returns the base url from a ${env}-env.properties file
+     * @return The base url of the testing environment
+     */
     @Key("base.url")
     public String baseUrl();
 
